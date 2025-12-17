@@ -1,36 +1,280 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="mystyles.css">
-<title>Home | Western Computer Science</title>
-</head>
-<body>
+    <head>
+    
+        <title>London Exotics and Mods</title>
+        <link rel="stylesheet" href="css/website-styles.css">
+        <script src="js/javaFunctions.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+    </head>
+    <body>
+        <!--
+        NAVIGATION BAR
+        -->
+        <a name="top"></a>
+        <div id="tintBG"></div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="navbar-brand"><img src="img/favicon.ico" alt="London Exotics and Mods Logo" width="32" height=width></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#about" onclick="$('#collapseOne').collapse('show');">About</a>
+                                <a class="dropdown-item" href="#contact" onclick="$('#collapseTwo').collapse('show');">Contact</a>
+                                <a class="dropdown-item" href="#references" onclick="$('#collapseThree').collapse('show');">References</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                    </ul>
+                        <a class="navbar-brand" href="#top">↑</a>
+                        
+                </div>
+            </nav>  
+            <div class="space"></div>
+            <!--
+            LARGE IMAGE WITH TEXT
+            -->
+            <div class="large-img">
+                <div class="tint">
+                    <div id="banner-name">London Exotics and Mods</div>
+                    <div id="banner-slogan">Dream cars, bikes, and builds</div>
+                </div>
+            </div>
+            <!--
+            JUMBOTRON
+            -->
+            <a name="about"></a>
+            <div class="jumbotron">
+                <div class="flex-table">
+                    <div class="flex-row remove-tint">
+                        <div class="flex-cell"><img src="img/car(jumbo).jpeg" alt="Modded Car" height="200"></div>
+                        <div class="flex-cell flex-text"><p class="lead remove-tint">Here at London Exotics and Mods, we believe everyone deserves their dream automobile. We aspire to bring your dreams to life, whether it be a car or a bike, if it was production, we can get it for you. For those who seek customization, we offer a wide variety of cosmetic and aero kits. For the gear heads who are looking to push the most out of their current build, we offer custom forced induction kits, exhausts, ecu's, and much more.</p>
+                        </div>
+                        <div class="flex-cell"><img src="img/bike_jumbo.webp" alt="Motorcycle" height="200"></div>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="flex-table">
+                    <div class="flex-row remove-tint">
+                        <div class="flex-cell"><img src="img/AkiraNakai.png" alt="Akira Nakai" height="150"></div>
+                        <div class="flex-text">The well renound car modifier Akira Nakai brings his expertise to London Exotics and Mods to help design and build custom body kits and preformance upgrade packages for individuals looking to take their car to the next level. Akira leads the modifying departement with years of hands on experience building custom cars for show and race, giving the perfect combination to bring your vision to life.</div>
+                        <div class="flex-cell"><img src="img/CarMan.jpeg" alt="Stock Man Photo" height="150"></div>
+                        <div class="flex-text">Meet Alex Turner, the Head of Exotic Car Acquisitions at London Exotics and Mods. With a deep passion for rare, high-performance vehicles, Alex oversees the sourcing and procurement of exclusive cars for discerning clients. His extensive network and expert knowledge ensure that customers have access to the world’s most sought-after exotic cars.</div>
+                        <div class="flex-cell"><img src="img/BikeWoman.jpeg" alt="Stock Motorcyclist Woman" height="150"></div>
+                        <div class="flex-text">Introducing Mia Jensen, Head of Motorcycle Acquisitions at London Exotics and Mods. A true motorcycle enthusiast, Mia leads the charge in sourcing rare and wild bikes for clients who crave performance and style. Her expertise spans everything from vintage café racers to cutting-edge superbikes, ensuring each customer finds their perfect ride.</div>
+                    </div>
+                </div>                
+            </div>
+            <!--
+            ACCORDION
+            -->
+            
+                <a name="products"></a>
+                <div class="accordion accordion-flush" id="accordion">
+ 
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Cars
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <img src="img/cars/productCar.jpeg" class="special-img" />
+                            <p class="special-desc">1999 BNR34 GTR</p>
+                            <p>#424E523334</p>
+                            <p>The 1999 Nissan Skyline GT-R BNR34 in Bayside Blue is an iconic piece of automotive history, known for its aggressive styling and legendary performance. Powered by the RB26DETT engine and equipped with advanced technology, it delivers exceptional handling and power that enthusiasts still crave today. With its timeless color and unmistakable presence, the BNR34 continues to be a symbol of Nissan’s engineering excellence.</p>
+                            <div class="flex-table">
+                                <div class="flex-row remove-tint">
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Car Options</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                
+                    
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Bikes
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                          <img src="img/productBike.jpeg" class="special-img" />
+                          <p class="special-desc">Ninja ZX6R</p>
+                            <p>#5A5836520A</p>
+                            <p>The Kawasaki Ninja ZX-6R in vibrant green is a high-performance sportbike designed for thrill-seekers. With its sharp, aerodynamic design and a powerful 636cc engine, it offers unmatched agility and acceleration on both the track and the streets. Known for its striking color and superior handling, the ZX-6R delivers an adrenaline-fueled riding experience that Kawasaki enthusiasts crave.</p>
+                            <div class="flex-table">
+                                <div class="flex-row remove-tint">
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Bike Options</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                    
+                    
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          Cosmetics
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThreee" data-parent="#accordion">
+                        <div class="card-body">
+                            <img src="img/cars/productCos.jpg" class="special-img" />
+                            <p class="special-desc">911 Body Kit</p>
+                            <p>#393131424B0A</p>
+                            <p>This 911 bodykit is a dynamic upgrade that enhances both the aesthetics and performance of the iconic Porsche 911. Crafted for precision, it includes aggressive front and rear bumpers, side skirts, and wide fenders that add a bold, track-ready appearance. This bodykit improves aerodynamics, providing greater stability at high speeds while maintaining the 911’s timeless design and performance excellence.</p>
+                            <div class="flex-table">
+                                <div class="flex-row remove-tint">
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Cosmetic Options</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                    
+                    
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          Performance
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <img src="img/productPerformance.jpeg" class="special-img" />
+                            <p class="special-desc">garrett GTX3582R Gen II</p>
+                            <p>#47545833353832520A</p>
+                            <p>The Garrett GTX3582R Gen II Super Core turbo is a high-performance turbocharger designed to deliver exceptional power and efficiency. Featuring advanced aerodynamics and a robust billet aluminum compressor wheel, it offers quicker spool times and improved airflow over its predecessors. Ideal for performance enthusiasts, this turbocharger enhances engine output, making it a perfect choice for high-horsepower builds seeking maximum boost and reliability.</p>
+                            <div class="flex-table">
+                                <div class="flex-row remove-tint">
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex-text">
+                                        <div class="button-container">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Car Options</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                    
+                    
+                </div>
+            
+            <!-- 
+            WEBFORM
+            -->
+            
+            <a name="contact"></a>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" onblur="validateForm()">
 
-<table class="center" style="width: 1000px;" cellpadding="0">
-<tbody>
-<tr>
-<td style="text-align: center;" title="Interstellar Banner" colspan="5"><img src="images/Banner_major.jpg" alt="Interstellar Banner" /></td>
-</tr>
-<tr>
-<td style="text-align: center;"><a href="index.html"><img src="images/Home_norm.jpg" onmouseover="this.src='images/Home_roll.jpg'" onmouseout="this.src='images/Home_norm.jpg'" /></td>
-<td style="text-align: center;"><a href="characters.html"><img src="images/Characters_norm.jpg" onmouseover="this.src='images/Characters_roll.jpg'" onmouseout="this.src='images/Characters_norm.jpg'" /></td>
-<td style="text-align: center;"><a href="plot.html"><img src="images/Plot_norm.jpg" onmouseover="this.src='images/Plot_roll.jpg'" onmouseout="this.src='images/Plot_norm.jpg'" /></td>
-<td style="text-align: center;"><a href="funfacts.html"><img src="images/Fun_Facts_norm.jpg" onmouseover="this.src='images/Fun_Facts_roll.jpg'" onmouseout="this.src='images/Fun_Facts_norm.jpg'" /></td>
-<td style="text-align: center;"><a href="references.html"><img src="images/References_norm.jpg" onmouseover="this.src='images/References_roll.jpg'" onmouseout="this.src='images/References_norm.jpg'" /></td>
-</td>
-</tr>
-<tr>
-<td style="text-align: center;" colspan="5"><p>Interstellar is a 2014 film from Christopher Nolan, of which he directed, co-wrote, and co-produced. It stars Mathew McCaonaughey, Michael Caine, Anne Hathaway, David Gyasi, and Wes Bentley. Set in a near distopian future, where a disastrous blight has been slowly destroying crops and rendering earth uninhabitable, humanity must find a way to persist. Throughout the film, we watch the crew of The Endurance make their way across the solar system to a mysterious wormhole in an attempt to find a habitable planet for humanity.</p></td>
-</tr>
-<tr>
-<td colspan="5">
-<h4 style="text-align: center;">Here is a short video.</h4>
-<p><video  style="display: block; margin-left: auto; margin-right: auto;" controls width="400"><source src="videoanim/1033-majorVideo.mp4" type="video/mp4"></video>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number (123 456 7890)" onblur="validateForm()">
 
-</body>
-<html>
+                <label for="reason">Reason for Message:</label>
+                <select id="reason" name="reason" onchange="toggleProductId()" onblur="validateForm()">
+                    <option value="general-inquiry">General inquiry</option>
+                    <option value="pricing">Pricing</option>
+                    <option value="product-info">Product info</option>
+                    <option value="shipping">Shipping</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <div id="product-id-container" style="display: none;">
+                    <label for="product-id">Product ID:</label>
+                    <input type="text" id="product-id" name="product-id" placeholder="Enter product ID" onblur="validateForm()">
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" onblur="validateForm()"></textarea>
+
+                <div class="button-container">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                </div>
+            </form>
+            
+            <!--
+            REFERENCES
+            -->
+            <a name="references"></a>
+            <div class="jumbotron">
+                <div class="flex-table">
+                    <div class="flex-row"><a href="https://www.favicon.cc" target="_blank" rel="noopener noreferrer">Website logo</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/photo-of-a-nissan-skyline-parked-near-body-of-water-8134647/" target="_blank" rel="noopener noreferrer">Gray R34</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/a-blue-porsche-car-parked-on-the-street-18003063/" target="_blank" rel="noopener noreferrer">Blue GT3RS</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/white-car-on-the-road-7993052/" target="_blank" rel="noopener noreferrer">White NSX</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/black-and-white-photography-of-a-car-engine-11712355/" target="_blank" rel="noopener noreferrer">Turbocharger</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/a-black-sports-bike-parked-on-the-street-8532378/" target="_blank" rel="noopener noreferrer">Sport Bike</a></div>
+                    <div class="flex-row"><a href="https://archive.org/details/youtube-xBXvTqcLfFs" target="_blank" rel="noopener noreferrer">Screenshot from this video of Akira Nakai</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/landscape-nature-fashion-man-15606963/" target="_blank" rel="noopener noreferrer">Stock Business man</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/woman-in-white-crop-top-putting-on-a-purple-helmet-9607381/" target="_blank" rel="noopener noreferrer">Stock Motorcyclist</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/a-blue-nissan-skyline-gt-r-on-the-driveway-18818905/" target="_blank" rel="noopener noreferrer">Blue R34</a></div>
+                    <div class="flex-row"><a href="https://images.pexels.com/photos/10647707/pexels-photo-10647707.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank" rel="noopener noreferrer">Green ZX6R</a></div>
+                    <div class="flex-row"><a href="https://pixabay.com/photos/rwb-porsche-automobile-3404132/" target="_blank" rel="noopener noreferrer">RWB Porsche Body Kit</a></div>
+                    <div class="flex-row"><a href="https://www.pexels.com/photo/metal-part-of-engine-14277598/" target="_blank" rel="noopener noreferrer">Turbocharger Closeup</a></div>
+                    <div class="flex-row"><a href="https://www.transparenttextures.com" target="_blank" rel="noopener noreferrer">Background</a></div>
+                </div>
+   
+            </div>
+     
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
