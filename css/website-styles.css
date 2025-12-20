@@ -35,7 +35,7 @@ a {
 .large-img {
     background-image: url("../img/cars/GTR_top.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     width:100%;
     height:555px;
