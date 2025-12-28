@@ -79,7 +79,7 @@ function validateForm() {
 function validateName() {
     const name = document.getElementById('name');
     const regex = /^[A-Za-z\s]+$/; // Only letters and spaces, no numbers
-    if (name.value.length >= 4 && regex.test(name.value)) {
+    if (name.value.length >= 3 && regex.test(name.value)) {
         name.classList.add('valid');
         name.classList.remove('invalid');
     } else {
@@ -117,7 +117,7 @@ function validateProductId() {
 // Message validation (10-30 characters)
 function validateMessage() {
     const message = document.getElementById('message');
-    if (message.value.length >= 10 && message.value.length <= 30) {
+    if (message.value.length >= 10) {
         message.classList.add('valid');
         message.classList.remove('invalid');
     } else {

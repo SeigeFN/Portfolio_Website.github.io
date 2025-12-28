@@ -35,7 +35,7 @@
                             <a class="nav-link" href="#products">Projects</a>
                         </li>
                     </ul>
-                        <a class="navbar-brand" href="#top">↑</a>
+                    <a class="navbar-brand" href="#top">↑</a>
                 </div>
             </nav>  
             <div class="space"></div>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <hr class="my-4">
-                <div class="flex-table">
+                <div class="flex-table remove-tint">
                     <div class="flex-row remove-tint">
                         <div class="flex-text">
                             <b>Technical Skills</b><br />
@@ -97,16 +97,28 @@
                         <div class="flex-cell">
                             <img src="img/Western_Logo_F_S_Science_RGB.svg" alt="example simulated black hole" title="example simulated black hole" class="special-img" />
                         </div>
-                        <div class="flex-text">
-
-                        </div>
                         <div class="flex-cell">
                             <img src="img/WFR Logo 2025-2026 (Black Yellow).png" alt="example simulated black hole" title="example simulated black hole" class="special-img" />
                         </div>
-                    </div>
-                </div> 
+                    </div>               
+                </div>
                 <hr class="my-4">
+                <div class="flex-table remove-tint">
+                    <div class="flex-row remove-tint">
+                        <div class="flex-text">
+                            <h4 style="text-align: center;">I'm always updating my resume! Make sure you're up to date with the latest details below.</h4>
+                        </div>
+                    </div>
+                    <div class="flex-row remove-tint">
+                        <div class="flex-cell">
+                            <div class="button-container">
+                                <a href="downloads/James Hinton Resume.pdf" target="_blank" class="btn btn-primary">Open in browswer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <!--
             ACCORDION
             -->
@@ -168,7 +180,7 @@
                                     <div class="flex-text">
                                         <div class="button-container">
                                             <a href="downloads/sudokuchecker.c" target="_blank" class="btn btn-primary">Open in browswer</a>
-</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -251,12 +263,21 @@
             
             <a name="contact"></a>
             <form id="contact-form">
+                <!-- Name input -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" onblur="validateForm()">
 
+                <!-- Phone number input -->
+                <!--
                 <label for="phone">Phone Number:</label>
                 <input type="text" id="phone" name="phone" placeholder="Enter your phone number (123 456 7890)" onblur="validateForm()">
+                -->
 
+                <!-- Email input -->
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" onblur="validateForm()" />
+
+                <!-- Message reason input -->
                 <label for="reason">Reason for Message:</label>
                 <select id="reason" name="reason" onchange="toggleProductId()" onblur="validateForm()">
                     <option value="general-inquiry">General inquiry</option>
@@ -271,8 +292,9 @@
                     <input type="text" id="product-id" name="product-id" placeholder="Enter product ID" onblur="validateForm()">
                 </div>
 
+                <!-- Message input -->
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message" onblur="validateForm()"></textarea>
+                <textarea type="text" id="message" name="message" placeholder="Enter your message" onblur="validateForm()"></textarea>
 
                 <div class="button-container">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
@@ -285,17 +307,17 @@
             <a name="references"></a>
             <div class="jumbotron">
                 <div class="flex-table">
-                    <div class="flex-row"><a href="https://www.favicon.cc" target="_blank" rel="noopener noreferrer">Website logo</a></div>
-                    <div class="flex-row"><a href="https://www.pexels.com/photo/photo-of-a-nissan-skyline-parked-near-body-of-water-8134647/" target="_blank" rel="noopener noreferrer">Gray R34</a></div>
-                    <div class="flex-row"><a href="https://www.pexels.com/photo/a-blue-porsche-car-parked-on-the-street-18003063/" target="_blank" rel="noopener noreferrer">Blue GT3RS</a></div>
-                    <div class="flex-row"><a href="https://www.pexels.com/photo/white-car-on-the-road-7993052/" target="_blank" rel="noopener noreferrer">White NSX</a></div>
-                    <div class="flex-row"><a href="https://www.pexels.com/photo/black-and-white-photography-of-a-car-engine-11712355/" target="_blank" rel="noopener noreferrer">Turbocharger</a></div>
-                    <div class="flex-row"><a href="https://www.pexels.com/photo/a-black-sports-bike-parked-on-the-street-8532378/" target="_blank" rel="noopener noreferrer">Sport Bike</a></div>
-                    <div class="flex-row"><a href="https://www.sciencenews.org/article/nasa-new-black-hole-visualizations-showcase-how-gravity-warps-light" target="_blank" rel="noopener noreferrer">Black Hole example</a></div>
-                    <div class="flex-row"><a href="https://www.puzzlemix.com/sudoku" target="_blank" rel="noopener noreferrer">Sudoku example</a></div>
-                    <div class="flex-row"><a href="https://westernformularacing.org/" target="_blank" rel="noopener noreferrer">Western Formula Racing Logo</a></div>
-                    <div class="flex-row"><a href="https://www.uwo.ca/sci/index.html" target="_blank" rel="noopener noreferrer">Western Faculty of Science</a></div>
-                    <div class="flex-row"><a href="https://www.transparenttextures.com" target="_blank" rel="noopener noreferrer">Background</a></div>
+                    <div class="flex-cell"><a href="https://www.favicon.cc" target="_blank" rel="noopener noreferrer">Website logo</a></div>
+                    <div class="flex-cell"><a href="https://www.pexels.com/photo/photo-of-a-nissan-skyline-parked-near-body-of-water-8134647/" target="_blank" rel="noopener noreferrer">Gray R34</a></div>
+                    <div class="flex-cell"><a href="https://www.pexels.com/photo/a-blue-porsche-car-parked-on-the-street-18003063/" target="_blank" rel="noopener noreferrer">Blue GT3RS</a></div>
+                    <div class="flex-cell"><a href="https://www.pexels.com/photo/white-car-on-the-road-7993052/" target="_blank" rel="noopener noreferrer">White NSX</a></div>
+                    <div class="flex-cell"><a href="https://www.pexels.com/photo/black-and-white-photography-of-a-car-engine-11712355/" target="_blank" rel="noopener noreferrer">Turbocharger</a></div>
+                    <div class="flex-cell"><a href="https://www.pexels.com/photo/a-black-sports-bike-parked-on-the-street-8532378/" target="_blank" rel="noopener noreferrer">Sport Bike</a></div>
+                    <div class="flex-cell"><a href="https://www.sciencenews.org/article/nasa-new-black-hole-visualizations-showcase-how-gravity-warps-light" target="_blank" rel="noopener noreferrer">Black Hole example</a></div>
+                    <div class="flex-cell"><a href="https://www.puzzlemix.com/sudoku" target="_blank" rel="noopener noreferrer">Sudoku example</a></div>
+                    <div class="flex-cell"><a href="https://westernformularacing.org/" target="_blank" rel="noopener noreferrer">Western Formula Racing Logo</a></div>
+                    <div class="flex-cell"><a href="https://www.uwo.ca/sci/index.html" target="_blank" rel="noopener noreferrer">Western Faculty of Science</a></div>
+                    <div class="flex-cell"><a href="https://www.transparenttextures.com" target="_blank" rel="noopener noreferrer">Background</a></div>
                 </div>
    
             </div>
@@ -304,7 +326,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
-
 </html>
 
 

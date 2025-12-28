@@ -202,6 +202,7 @@ section {
 }
 .flex-row {
     display: flex;
+    justify-content: space-evenly;
 }
 
 flex-cell {
