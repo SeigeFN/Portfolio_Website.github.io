@@ -1,4 +1,4 @@
 <h2>Portfolio Website</h2>
 --ACTIVE--
 
-Adapting a previous project for personal use, to showcase coding projects, and other passion projects.
+Working on showing off coding projects, technical skills, and personal achievements through a well designed and visually pleasing web page.
