@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>James's Projects</title>
+        <title>James Hinton Portfolio</title>
         <link rel="stylesheet" href="css/website-styles.css">
         <script src="js/javaFunctions.js" defer></script>
         <meta charset="utf-8">
@@ -27,8 +27,8 @@
                                 <a class="dropdown-item" href="#about" onclick="$('#collapseOne').collapse('show');">About</a>
                                 <a class="dropdown-item" href="#contact" onclick="$('#collapseTwo').collapse('show');">Contact</a>
                                 <!--
-                                <a class="dropdown-item" href="#references" onclick="$('#collapseThree').collapse('show');">References</a>
-                                -->
+                        <a class="dropdown-item" href="#references" onclick="$('#collapseThree').collapse('show');">References</a>
+                        -->
                             </div>
                         </li>
                         <li class="nav-item">
@@ -37,20 +37,20 @@
                     </ul>
                     <a class="navbar-brand" href="#top">↑</a>
                 </div>
-            </nav>  
+            </nav>
             <div class="space"></div>
             <!--
-            LARGE IMAGE WITH TEXT
-            -->
+    LARGE IMAGE WITH TEXT
+    -->
             <div class="large-img">
                 <div class="tint">
-                    <div id="banner-name">James's Projects</div>
-                    <div id="banner-slogan">Code Showcase</div>
+                    <div id="banner-name">James Hinton</div>
+                    <div id="banner-slogan">Who am I?</div>
                 </div>
             </div>
             <!--
-            JUMBOTRON
-            -->
+    JUMBOTRON
+    -->
             <a name="about"></a>
             <div class="jumbotron">
                 <div class="flex-table">
@@ -59,7 +59,13 @@
                             <img src="img/car(jumbo).jpeg" alt="Modded Car" height="200">
                         </div>
                         <div class="flex-cell flex-text">
-                            <p class="lead remove-tint">description 1</p>
+                            <p class="lead remove-tint">
+                                My name is James Hinton, and I am a 3rd year Computer Science student at the University of Western Ontario.
+                                I have a strong passion for programming and software development, and I am constantly seeking opportunities to expand my knowledge and skills in this field.
+                                I am always working on personal projects to learn new skills and improve areas of interest.
+                                In addition to my academic pursuits, I am also an avid car enthusiast, with a particular interest in performance modifications.
+                                Have a look around!
+                            </p>
                         </div>
                         <div class="flex-cell">
                             <img src="img/bike_jumbo.webp" alt="Motorcycle" height="200">
@@ -85,7 +91,7 @@
                         </div>
                         <div class="flex-text">
                             <b>Western Formula Racing</b><br />
-                            2024 – 2026 Seasons<br />
+                            2025/2026 Seasons<br />
                             Assisted with aero and ergo design, composites preparation and fabrication<br />
                             Collaborated with multidisciplinary team members under competition deadlines<br />
                             Competitions:<br />
@@ -100,7 +106,7 @@
                         <div class="flex-cell">
                             <img src="img/WFR Logo 2025-2026 (Black Yellow).png" alt="example simulated black hole" title="example simulated black hole" class="special-img" />
                         </div>
-                    </div>               
+                    </div>
                 </div>
                 <hr class="my-4">
                 <div class="flex-table remove-tint">
@@ -119,13 +125,11 @@
                     </div>
                 </div>
             </div>
-
             <!--
             ACCORDION
             -->
             <a name="products"></a>
             <div class="accordion accordion-flush" id="accordion">
-                
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
@@ -156,8 +160,8 @@
                         </div>
                     </div>
                 </div>
-                
-                    
+
+
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
@@ -166,12 +170,12 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            <img src="img/Sudoku-example.png" alt="example sudoku" title="example sudoku" class="special-img" />
+                            <img src="img/exampleSudoku.png" alt="example sudoku" title="example sudoku" class="special-img" />
                             <p class="special-desc">
                                 Simple program to check if a Sudoku solution is valid
                             </p>
                             <p>
-                                C, pthread 
+                                C, pthread
                             </p>
                             <p>
                                 Uses threads to quickly check all rows, columns, and subgrids of a sudoku puzzle for validity, without incorrect input handling. Takes .txt files as commandlind arguments, formatted with tab separted columns, and newline separated rows.
@@ -188,81 +192,78 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!--
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                Cosmetics
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThreee" data-parent="#accordion">
+              <div class="card-body">
+                  <img src="img/cars/productCos.jpg" class="special-img" />
+                  <p class="special-desc">911 Body Kit</p>
+                  <p>#393131424B0A</p>
+                  <p>This 911 bodykit is a dynamic upgrade that enhances both the aesthetics and performance of the iconic Porsche 911. Crafted for precision, it includes aggressive front and rear bumpers, side skirts, and wide fenders that add a bold, track-ready appearance. This bodykit improves aerodynamics, providing greater stability at high speeds while maintaining the 911’s timeless design and performance excellence.</p>
+                  <div class="flex-table">
+                      <div class="flex-row remove-tint">
+                          <div class="flex-text">
+                              <div class="button-container">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                              </div>
+                          </div>
+                          <div class="flex-text">
+                              <div class="button-container">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Cosmetic Options</button>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                    
-                    <!--
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                          Cosmetics
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThreee" data-parent="#accordion">
-                        <div class="card-body">
-                            <img src="img/cars/productCos.jpg" class="special-img" />
-                            <p class="special-desc">911 Body Kit</p>
-                            <p>#393131424B0A</p>
-                            <p>This 911 bodykit is a dynamic upgrade that enhances both the aesthetics and performance of the iconic Porsche 911. Crafted for precision, it includes aggressive front and rear bumpers, side skirts, and wide fenders that add a bold, track-ready appearance. This bodykit improves aerodynamics, providing greater stability at high speeds while maintaining the 911’s timeless design and performance excellence.</p>
-                            <div class="flex-table">
-                                <div class="flex-row remove-tint">
-                                    <div class="flex-text">
-                                        <div class="button-container">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
-                                        </div>
-                                    </div>
-                                    <div class="flex-text">
-                                        <div class="button-container">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Cosmetic Options</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+          </div>
+        </div>
+          -->
+                <!--
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Performance
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                  <img src="img/productPerformance.jpeg" class="special-img" />
+                  <p class="special-desc">garrett GTX3582R Gen II</p>
+                  <p>#47545833353832520A</p>
+                  <p>The Garrett GTX3582R Gen II Super Core turbo is a high-performance turbocharger designed to deliver exceptional power and efficiency. Featuring advanced aerodynamics and a robust billet aluminum compressor wheel, it offers quicker spool times and improved airflow over its predecessors. Ideal for performance enthusiasts, this turbocharger enhances engine output, making it a perfect choice for high-horsepower builds seeking maximum boost and reliability.</p>
+                  <div class="flex-table">
+                      <div class="flex-row remove-tint">
+                          <div class="flex-text">
+                              <div class="button-container">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                              </div>
+                          </div>
+                          <div class="flex-text">
+                              <div class="button-container">
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Car Options</button>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                    -->
-                    <!--
-                  <div class="card">
-                    <div class="card-header" id="headingFour">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                          Performance
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                        <div class="card-body">
-                            <img src="img/productPerformance.jpeg" class="special-img" />
-                            <p class="special-desc">garrett GTX3582R Gen II</p>
-                            <p>#47545833353832520A</p>
-                            <p>The Garrett GTX3582R Gen II Super Core turbo is a high-performance turbocharger designed to deliver exceptional power and efficiency. Featuring advanced aerodynamics and a robust billet aluminum compressor wheel, it offers quicker spool times and improved airflow over its predecessors. Ideal for performance enthusiasts, this turbocharger enhances engine output, making it a perfect choice for high-horsepower builds seeking maximum boost and reliability.</p>
-                            <div class="flex-table">
-                                <div class="flex-row remove-tint">
-                                    <div class="flex-text">
-                                        <div class="button-container">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
-                                        </div>
-                                    </div>
-                                    <div class="flex-text">
-                                        <div class="button-container">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Car Options</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                   --> 
-                    
+              </div>
+          </div>
+        </div>
+         -->
             </div>
-            
-            <!-- 
-            WEBFORM
-            -->
-            
+
+            <!-- WEBFORM -->
+
             <a name="contact"></a>
             <form id="contact-form">
                 <!-- Name input -->
@@ -274,7 +275,6 @@
                 <label for="phone">Phone Number:</label>
                 <input type="text" id="phone" name="phone" placeholder="Enter your phone number (123 456 7890)" onblur="validateForm()">
                 -->
-
                 <!-- Email input -->
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email" placeholder="Enter your email" onblur="validateForm()" />
@@ -282,16 +282,16 @@
                 <!-- Message reason input -->
                 <label for="reason">Reason for Message:</label>
                 <select id="reason" name="reason" onchange="toggleProductId()" onblur="validateForm()">
-                    <option value="general-inquiry">General inquiry</option>
-                    <option value="pricing">Pricing</option>
-                    <option value="product-info">Product info</option>
-                    <option value="shipping">Shipping</option>
+                    <option value="inquiry">Inquiry</option>
+                    <option value="recruiter">Recruiter</option>
+                    <option value="feedback">Feedback</option>
                     <option value="other">Other</option>
                 </select>
 
-                <div id="product-id-container" style="display: none;">
-                    <label for="product-id">Product ID:</label>
-                    <input type="text" id="product-id" name="product-id" placeholder="Enter product ID" onblur="validateForm()">
+                <!-- Recruiter Option -->
+                <div id="recruiter-container" style="display: none;">
+                    <label for="recruiter">Recruiter Organization:</label>
+                    <input type="text" id="product-id" name="product-id" placeholder="Enter Organization" onblur="validateForm()">
                 </div>
 
                 <!-- Message input -->
@@ -299,31 +299,31 @@
                 <textarea type="text" id="message" name="message" placeholder="Enter your message" onblur="validateForm()"></textarea>
 
                 <div class="button-container">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Order Now!</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Leave Message</button>
                 </div>
             </form>
-            
+
             <!--
-            REFERENCES
-            -->
+    REFERENCES
+    -->
             <a name="references"></a>
             <div class="jumbotron">
                 <div class="flex-table">
-                    <div class="flex-cell"><a href="https://www.favicon.cc" target="_blank" rel="noopener noreferrer">Website logo</a></div>
-                    <div class="flex-cell"><a href="https://www.pexels.com/photo/photo-of-a-nissan-skyline-parked-near-body-of-water-8134647/" target="_blank" rel="noopener noreferrer">Gray R34</a></div>
-                    <div class="flex-cell"><a href="https://www.pexels.com/photo/a-blue-porsche-car-parked-on-the-street-18003063/" target="_blank" rel="noopener noreferrer">Blue GT3RS</a></div>
-                    <div class="flex-cell"><a href="https://www.pexels.com/photo/white-car-on-the-road-7993052/" target="_blank" rel="noopener noreferrer">White NSX</a></div>
-                    <div class="flex-cell"><a href="https://www.pexels.com/photo/black-and-white-photography-of-a-car-engine-11712355/" target="_blank" rel="noopener noreferrer">Turbocharger</a></div>
-                    <div class="flex-cell"><a href="https://www.pexels.com/photo/a-black-sports-bike-parked-on-the-street-8532378/" target="_blank" rel="noopener noreferrer">Sport Bike</a></div>
-                    <div class="flex-cell"><a href="https://www.sciencenews.org/article/nasa-new-black-hole-visualizations-showcase-how-gravity-warps-light" target="_blank" rel="noopener noreferrer">Black Hole example</a></div>
-                    <div class="flex-cell"><a href="https://www.puzzlemix.com/sudoku" target="_blank" rel="noopener noreferrer">Sudoku example</a></div>
-                    <div class="flex-cell"><a href="https://westernformularacing.org/" target="_blank" rel="noopener noreferrer">Western Formula Racing Logo</a></div>
-                    <div class="flex-cell"><a href="https://www.uwo.ca/sci/index.html" target="_blank" rel="noopener noreferrer">Western Faculty of Science</a></div>
-                    <div class="flex-cell"><a href="https://www.transparenttextures.com" target="_blank" rel="noopener noreferrer">Background</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.favicon.cc" target="_blank" rel="noopener noreferrer">Website logo</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.pexels.com/photo/photo-of-a-nissan-skyline-parked-near-body-of-water-8134647/" target="_blank" rel="noopener noreferrer">Gray R34</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.pexels.com/photo/a-blue-porsche-car-parked-on-the-street-18003063/" target="_blank" rel="noopener noreferrer">Blue GT3RS</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.pexels.com/photo/white-car-on-the-road-7993052/" target="_blank" rel="noopener noreferrer">White NSX</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.pexels.com/photo/black-and-white-photography-of-a-car-engine-11712355/" target="_blank" rel="noopener noreferrer">Turbocharger</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.pexels.com/photo/a-black-sports-bike-parked-on-the-street-8532378/" target="_blank" rel="noopener noreferrer">Sport Bike</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.sciencenews.org/article/nasa-new-black-hole-visualizations-showcase-how-gravity-warps-light" target="_blank" rel="noopener noreferrer">Black Hole example</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fsandiway.arizona.edu%2Fsudoku%2Fexamples.html&ved=0CBkQjhxqFwoTCLDxl-rd45EDFQAAAAAdAAAAABAH&opi=89978449" target="_blank" rel="noopener noreferrer">Sudoku example</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://westernformularacing.org/" target="_blank" rel="noopener noreferrer">Western Formula Racing Logo</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.uwo.ca/sci/index.html" target="_blank" rel="noopener noreferrer">Western Faculty of Science</a></div>
+                    <div class="flex-row" style="justify-content: flex-start;"><a href="https://www.transparenttextures.com" target="_blank" rel="noopener noreferrer">Background</a></div>
                 </div>
-   
+
             </div>
-     
+
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -58,9 +58,9 @@ $(function() {
 
 function toggleProductId() {
     const reason = document.getElementById('reason').value;
-    const productIdContainer = document.getElementById('product-id-container');
+    const productIdContainer = document.getElementById('recruiter-container');
 
-    if (reason === 'product-info') {
+    if (reason === 'recruiter') {
         productIdContainer.style.display = 'block';
     } else {
         productIdContainer.style.display = 'none';
@@ -70,7 +70,8 @@ function toggleProductId() {
 // Form validation function
 function validateForm() {
     validateName();
-    validatePhone();
+    validateEmail();
+    //validatePhone();
     validateProductId();
     validateMessage();
 }
@@ -85,6 +86,19 @@ function validateName() {
     } else {
         name.classList.add('invalid');
         name.classList.remove('valid');
+    }
+}
+
+// Email validation (xx@xx.xx)
+function validateEmail() {
+    const email = document.getElementById('email');
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
+    if (regex.test(email.value)) {
+        email.classList.add('valid');
+        email.classList.remove('invalid');
+    } else {
+        email.classList.add('invalid');
+        email.classList.remove('valid');
     }
 }
 

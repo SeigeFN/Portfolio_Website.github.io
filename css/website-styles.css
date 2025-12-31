@@ -5,8 +5,8 @@ body {
 }
 html, body {
     margin: 0;
-    padding:0;
-    scroll-behavior: smooth;
+    padding: 0;
+    scroll-padding-top: 60px;
     overflow: auto;
 }
 p {
