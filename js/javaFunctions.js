@@ -153,4 +153,4 @@ function updateDaysSince(startDate) {
 
     document.getElementById("days-counter").textContent = diffDays + " day(s) since last update";
 }
-updateDaysSince("2025-12-28");
+updateDaysSince("2026-01-01");
