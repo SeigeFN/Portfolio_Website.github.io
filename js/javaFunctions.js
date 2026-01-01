@@ -72,7 +72,7 @@ function validateForm() {
     validateName();
     validateEmail();
     //validatePhone();
-    validateProductId();
+    validateOrganization();
     validateMessage();
 }
 
@@ -115,23 +115,23 @@ function validatePhone() {
     }
 }
 
-// Product ID validation (only when visible)
-function validateProductId() {
-    const productId = document.getElementById('product-id');
-    const productCodes = ['#424E523334', '#5A5836520A', '#393131424B0A', '#47545833353832520A']; // Example product IDs
-    if (productId.style.display !== 'none' && productCodes.includes(productId.value)) {
-        productId.classList.add('valid');
-        productId.classList.remove('invalid');
+// organization validation (only when visible)
+function validateOrganization() {
+    const organization = document.getElementById('organization');
+    //const productCodes = ['#424E523334', '#5A5836520A', '#393131424B0A', '#47545833353832520A']; // Example product IDs
+    if (organization.value.length >= 2) {
+        organization.classList.add('valid');
+        organization.classList.remove('invalid');
     } else {
-        productId.classList.add('invalid');
-        productId.classList.remove('valid');
+        organization.classList.add('invalid');
+        organization.classList.remove('valid');
     }
 }
 
 // Message validation (10-30 characters)
 function validateMessage() {
     const message = document.getElementById('message');
-    if (message.value.length >= 10) {
+    if (message.value.length >= 2) {
         message.classList.add('valid');
         message.classList.remove('invalid');
     } else {
